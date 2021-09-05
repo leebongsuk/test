@@ -1,4 +1,11 @@
-import _ from 'lodash';
 
-console.log('hello world');
-console.log(_.camelCase('hello world'));
+
+function timeout(cb){
+    setTimeout( ()=>{
+        console.log('Heropy!')
+        cb()
+    },3000)
+}
+timeout(()=>{
+    console.log('Done!')
+})
